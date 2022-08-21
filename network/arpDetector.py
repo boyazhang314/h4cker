@@ -9,7 +9,7 @@ def processPacket(packet):
     src_IP = packet['ARP'].psrc
     src_MAC = packet['Ether'].src 
 
-    # if the packet MAP is in the table
+    # If the packet MAP is in the table
     if src_MAC in IP_MAC_Map.keys():
         # IP address is not the same
         if IP_MAC_Map[src_MAC] != src_IP:

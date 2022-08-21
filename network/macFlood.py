@@ -1,7 +1,6 @@
 # Performs a MAC flooding attack
 
 from scapy.all import Ether, RandMAC, RandIP, IP, sendp
-import time
 
 iface = 'eth0'
 
